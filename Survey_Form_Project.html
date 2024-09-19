@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+  
+  <p id="description">Please fill out this survey form and submit your feedback.</p>
+  
+  <form id="survey-form">
+    <!-- Name Input -->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Number Input -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" required><br><br>
+    
+    <!-- Dropdown -->
+    <label for="dropdown">Select your country:</label>
+    <select id="dropdown" name="country" required>
+      <option value="" disabled selected>Select your country</option>
+      <option value="us">United States</option>
+      <option value="canada">Canada</option>
+    </select><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Checkboxes -->
+    <p>Interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Text Area -->
+    <label for="comments">Any additional comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea><br><br>
+    
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
