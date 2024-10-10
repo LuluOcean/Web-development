@@ -9,7 +9,7 @@ header {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 25vh;
+    max-height: 25vh;
 }
 
 header h1 {
@@ -99,7 +99,7 @@ main {
 main .main_content {
     background-color: rgb(51, 51, 53);
     max-width: 90vw;
-    margin: 10vh 0;
+    margin: 5vh;
     padding: auto;
     font-family: sans-serif;
     border: none;
